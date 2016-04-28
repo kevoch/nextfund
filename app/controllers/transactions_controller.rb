@@ -29,12 +29,12 @@ class TransactionsController < ApplicationController
             @project.create_activity :donation_milestone, owner: current_user, recipient: @project.user
       end
 
-      url = 'http://localhost:3000/transactions/new?id=' + @project.id.to_s + '#step3'
-      byebug
+      # url = 'http://localhost:3000/transactions/new?id=' + @project.id.to_s + '#step3'
+      
 
       # current_user.purchase_cart_movies!
-      # redirect_to project_path(@project), notice: "Congratulations! Your transaction has been successfully processed!"
-      redirect_to url
+      redirect_to project_path(@project), notice: "Congratulations! Your transaction has been successfully processed!"
+      # redirect_to url
     else
 
       if result.errors.present?
