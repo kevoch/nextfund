@@ -86,7 +86,7 @@
       <b> Deadline: </b><%= @project.deadline %><br />
       <b> Summary: </b><%= @project.summary %><br />
       <b> Amount needed: </b><%= number_with_delimiter(@project.amount_needed) %><br />
-      <b> Amount achieved: </b><%= @project.amount_achieved %><br />
+      <b> Amount pledged: </b><%= number_with_delimiter(@project.amount_achieved) %><br />
 
       <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
        <%= link_to like_project_path(@project), :remote => true, method: :put, class: 'vpos' do%>
