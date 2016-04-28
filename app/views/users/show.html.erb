@@ -32,7 +32,7 @@
 	<div class="content">
 		<% current_user.projects.each do |p| %>
 		<article>
-			<div class="thumbnail" style= "background-image: url(<%= p.images.first.url(:thumb) %>)">
+			<div class="thumbnail" style= "width: 320px;height: 184px; background-repeat: no-repeat;background-size: cover;background-image: url(<%= p.images.first.url %>)">
 			</div>
 			<div class="post">
 				<div class="info">
