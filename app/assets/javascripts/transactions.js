@@ -24,6 +24,7 @@ $(document).on('ready page:load', function () {
         nextTab($active);
 
     });
+
     $(".prev-step").click(function (e) {
 
         var $active = $('.wizard .nav-tabs li.active');
@@ -37,6 +38,7 @@ $(document).on('ready page:load', function () {
 function nextTab(elem) {
     $(elem).next().find('a[data-toggle="tab"]').click();
 }
+
 function prevTab(elem) {
     $(elem).prev().find('a[data-toggle="tab"]').click();
 }

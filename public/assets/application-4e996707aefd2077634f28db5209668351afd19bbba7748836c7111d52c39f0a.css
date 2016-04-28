@@ -1,0 +1,2956 @@
+/* line 5, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/activities.scss */
+.activity {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 11, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/activities.scss */
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+/* line 6, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+th {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #36454f;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  width: 400px;
+}
+
+/* line 17, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+table {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 25, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.campaign_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  animation: colorBackground 20s infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+  -webkit-animation: colorBackground 20s infinite;
+  /* Chrome, Safari 5+ */
+  -moz-animation: colorBackground 20s infinite;
+  /* Firefox 5-15 */
+  -o-animation: colorBackground 20s infinite;
+  /* Opera 12.00 */
+}
+
+@keyframes colorBackground {
+  0% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+  20% {
+    background-color: #6bd57e;
+    color: #6bd57e;
+  }
+  40% {
+    background-color: #ff6f6f;
+    color: #ff6f6f;
+  }
+  60% {
+    background-color: #57cff4;
+    color: #57cff4;
+  }
+  80% {
+    background-color: #0ed4c8;
+    color: #0ed4c8;
+  }
+  100% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+}
+@-webkit-keyframes colorBackground {
+  0% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+  20% {
+    background-color: #6bd57e;
+    color: #6bd57e;
+  }
+  40% {
+    background-color: #ff6f6f;
+    color: #ff6f6f;
+  }
+  60% {
+    background-color: #57cff4;
+    color: #57cff4;
+  }
+  80% {
+    background-color: #0ed4c8;
+    color: #0ed4c8;
+  }
+  100% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+}
+@-moz-keyframes colorBackground {
+  0% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+  20% {
+    background-color: #6bd57e;
+    color: #6bd57e;
+  }
+  40% {
+    background-color: #ff6f6f;
+    color: #ff6f6f;
+  }
+  60% {
+    background-color: #57cff4;
+    color: #57cff4;
+  }
+  80% {
+    background-color: #0ed4c8;
+    color: #0ed4c8;
+  }
+  100% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+}
+@-o-keyframes colorBackground {
+  0% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+  20% {
+    background-color: #6bd57e;
+    color: #6bd57e;
+  }
+  40% {
+    background-color: #ff6f6f;
+    color: #ff6f6f;
+  }
+  60% {
+    background-color: #57cff4;
+    color: #57cff4;
+  }
+  80% {
+    background-color: #0ed4c8;
+    color: #0ed4c8;
+  }
+  100% {
+    background-color: #fbcf61;
+    color: #fbcf61;
+  }
+}
+/* line 151, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.campaign_bg h1 {
+  padding-top: 50px;
+  color: #36454f;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* line 162, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.title_input {
+  width: 700px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: transparent;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin: auto;
+}
+
+/* line 176, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.title_bar {
+  background-color: white;
+  width: 530px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: darkgrey;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 190, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.dropdown-menu {
+  width: 530px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* line 196, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/campaign.scss */
+.glyphicon {
+  color: #36454f;
+  background-color: transparent;
+}
+/* line 2, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.discover {
+  position: relative;
+  background-color: #36454f;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  height: 100%;
+  color: #999999;
+}
+
+/* line 13, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.category1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  padding-left: 20px;
+  max-width: 1650px;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 400px;
+}
+
+/* line 28, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.category1 h1 {
+  font-size: 45px;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 37, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 170px;
+  max-width: 290px;
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  background: #000000;
+  border-radius: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 52, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 * {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border-radius: 70px;
+}
+
+/* line 58, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 img {
+  opacity: 0.25;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+  max-width: 100%;
+}
+
+/* line 68, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+  transform: rotate(0deg) translateY(-50%) scale(1);
+  -webkit-transform-origin: center 0;
+  transform-origin: center 0;
+}
+
+/* line 80, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 figcaption h2 span {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 86, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 figcaption:before,
+figure.snip10911 figcaption:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 98, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 figcaption:before {
+  left: 0;
+  top: 0;
+}
+
+/* line 103, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911 figcaption:after {
+  bottom: 0;
+  right: 0;
+}
+
+/* line 109, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911:hover img {
+  opacity: 1;
+}
+
+/* line 113, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911:hover figcaption {
+  -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+  transform: rotate(-45deg) translateY(-50%) scale(0.9);
+}
+
+/* line 118, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+figure.snip10911:hover figcaption:before,
+figure.snip10911.hover figcaption:before,
+figure.snip10911:hover figcaption:after,
+figure.snip10911.hover figcaption:after {
+  width: 100%;
+}
+
+/* line 125, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.project_list {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* line 132, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.row {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #36454f;
+}
+
+/* line 140, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.col-md-4 {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin-left: 50px;
+  margin-top: 50px;
+  background: transparent;
+  -webkit-transition: all 1s ease;
+  background-color: transparent;
+}
+
+/* line 152, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/discovery.scss */
+.col-md-4:hover {
+  -webkit-transform: scale(1.25);
+}
+/* Get the bourbon mixin from http://bourbon.io */
+/* Reset */
+
+.flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #ccc; }
+
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+.flip-clock-wrapper .flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }
+
+.flip-clock-wrapper .flip-clock-meridium a { color: #313333; }
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}
+
+.flip-clock-wrapper:before,
+.flip-clock-wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flip-clock-wrapper:after {
+    clear: both;
+}
+
+/* Skeleton */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  background: #000;
+}
+
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  margin-left: 0;
+}
+
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }
+
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; }
+
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0; }
+
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }
+
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+.flip-clock-divider:first-child {
+  width: 0; }
+
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+.flip-clock-dot.top {
+  top: 30px; }
+
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+@-webkit-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-moz-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-o-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg); }
+
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+
+@-moz-keyframes turn {
+  0% {
+    -moz-transform: rotateX(90deg); }
+
+  100% {
+    -moz-transform: rotateX(0deg); } }
+
+@-o-keyframes turn {
+  0% {
+    -o-transform: rotateX(90deg); }
+
+  100% {
+    -o-transform: rotateX(0deg); } }
+
+@keyframes turn {
+  0% {
+    transform: rotateX(90deg); }
+
+  100% {
+    transform: rotateX(0deg); } }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+@-webkit-keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+
+  100% {
+    -webkit-transform: rotateX(-90deg); } }
+
+@-moz-keyframes turn2 {
+  0% {
+    -moz-transform: rotateX(0deg); }
+
+  100% {
+    -moz-transform: rotateX(-90deg); } }
+
+@-o-keyframes turn2 {
+  0% {
+    -o-transform: rotateX(0deg); }
+
+  100% {
+    -o-transform: rotateX(-90deg); } }
+
+@keyframes turn2 {
+  0% {
+    transform: rotateX(0deg); }
+
+  100% {
+    transform: rotateX(-90deg); } }
+
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+/*DOWN*/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+	
+/* --- SMALL CLOCK CSS --- */
+
+/* Reset */
+.flip-clock-small-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-clock-small-wrapper a {
+  cursor: pointer;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #ccc; }
+
+.flip-clock-small-wrapper a:hover {
+  color: #fff; }
+
+.flip-clock-small-wrapper ul {
+  list-style: none; }
+
+.flip-clock-small-wrapper.clearfix:before,
+.flip-clock-small-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+.flip-clock-small-wrapper.clearfix:after {
+  clear: both; }
+
+.flip-clock-small-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+.flip-clock-small-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+.flip-clock-small-wrapper .flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 18px !important; }
+
+.flip-clock-small-wrapper .flip-clock-meridium a { color: #313333; }
+
+.flip-clock-small-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}
+
+.flip-clock-small-wrapper:before,
+.flip-clock-small-wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flip-clock-small-wrapper:after {
+    clear: both;
+}
+
+/* Skeleton */
+.flip-clock-small-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 2px;
+  width: 30px;
+  padding: 0;
+  height: 38px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 37px;
+  border-radius: 6px;
+  background: #000;
+}
+
+.flip-clock-small-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  margin-left: 0;
+}
+
+.flip-clock-small-wrapper ul li:first-child {
+  z-index: 2; }
+
+.flip-clock-small-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }
+
+.flip-clock-small-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; }
+
+.flip-clock-small-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+.flip-clock-small-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+.flip-clock-small-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-small-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0; }
+
+.flip-clock-small-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 20px; }
+
+.flip-clock-small-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+.flip-clock-small-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+.flip-clock-small-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+.flip-clock-small-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-small-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }
+
+.flip-clock-small-wrapper .flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 40px; }
+
+.flip-clock-small-wrapper .flip-clock-divider:first-child {
+  width: 0; }
+
+.flip-clock-small-wrapper .flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-small-wrapper .flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.1em;
+  right: -48px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-small-wrapper .flip-clock-divider.minutes .flip-clock-label {
+  right: -54px; }
+
+.flip-clock-small-wrapper .flip-clock-divider.seconds .flip-clock-label {
+  right: -56px; }
+
+.flip-clock-small-wrapper .flip-clock-dot.top {
+  top: 10px; }
+
+.flip-clock-small-wrapper .flip-clock-dot.bottom {
+  bottom: 6px; }
+
+.flip-clock-small-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+.flip-clock-small-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+.flip-clock-small-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+.flip-clock-small-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-small-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+/*DOWN*/
+.flip-clock-small-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-small-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }
+
+/*---------------------*/
+/* VIDEO */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+/* line 10, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.photo {
+  position: absolute;
+  object-fit: contain;
+  z-index: -5;
+  bottom: 0px;
+  left: 0px;
+  /*background-image: url("https://a1.muscache.com/airbnb/upcoming_reservations/2x1/5_keys.jpg");*/
+  /*width: 688px;*/
+  width: 100%;
+  /*height: 344px;*/
+}
+
+/* line 22, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.hero {
+  position: relative;
+  background: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 130px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  margin-bottom: 100px;
+}
+
+/* line 39, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+/* line 43, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.hero h1 span {
+  font-size: 20px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+/*---------------------*/
+/* HOW IT WORKS */
+/* line 54, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.about {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  max-width: 1400px;
+  min-width: 500px;
+  max-height: 1000px;
+  min-height: 400px;
+}
+
+/* line 68, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.about h1 {
+  font-size: 35px;
+  line-height: 1.3;
+  color: #36454f;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 75, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.about h1 span {
+  font-size: 20px;
+  color: #4AA02C;
+  border-bottom: 2px solid #4AA02C;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+/* line 82, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.about p {
+  color: #808284;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+/* line 91, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.plan {
+  float: left;
+  text-align: center;
+  display: block;
+  color: #36454f;
+  margin-left: 75px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 100, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.plan_image {
+  background-image: url("https://g1.iggcdn.com/assets/site/how_it_works/prelaunch_icon-a5b6d0652dad145f20642a7e7e8ce5848cc1ab4243a358627fbfbdc7a0b918e2.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/* line 111, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.plan_image1 {
+  background-image: url("https://g3.iggcdn.com/assets/site/how_it_works/prelaunch-d3249eb19498a9cb0cacad681bcfcf278a6e663c8ff8a0bc51d64ab224ab2ed9.jpg");
+  background-repeat: no-repeat;
+  background-size: 370px 200px;
+  display: block;
+  width: 370px;
+  height: 200px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 124, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.crowdfunding {
+  display: block;
+  margin: auto;
+  float: left;
+  margin-left: 75px;
+  color: #36454f;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 133, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.crowdfunding_image {
+  background-image: url("https://g1.iggcdn.com/assets/site/how_it_works/crowdfunding_icon-1c3d75ac822c98370ee7232d33efd9374aa0b834bc5535a7a962b8dfead5da26.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/* line 144, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.crowdfunding_image1 {
+  background-image: url("https://g1.iggcdn.com/assets/site/how_it_works/crowdfunding-a7fdf9b6d116535f083bea137f157c92820178550890f012583a801d6efee449.jpg");
+  background-repeat: no-repeat;
+  background-size: 370px 200px;
+  display: block;
+  width: 370px;
+  height: 200px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 157, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.marketplace {
+  display: block;
+  margin: auto;
+  float: left;
+  margin-left: 75px;
+  color: #36454f;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 166, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.marketplace_image {
+  background-image: url("https://g1.iggcdn.com/assets/site/how_it_works/marketplace_icon-50606fc7ec51bd2d318480c0bc194647dd4911d0ad03a5975088841d1f6ccf5d.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/* line 176, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.marketplace_image1 {
+  background-image: url("https://g3.iggcdn.com/assets/site/how_it_works/marketplace-3c337f2d0dc31215f42766854bf71cf98b66e36462da087986786440a18257fd.jpg");
+  background-repeat: no-repeat;
+  background-size: 370px 200px;
+  display: block;
+  width: 370px;
+  height: 200px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*---------------------*/
+/* HOTTEST PROJECT */
+/* line 193, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.carousel-caption {
+  top: 20%;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  height: 100%;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 206, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 211, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.container h3 {
+  font-size: 45px;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*---------------------*/
+/* EXPLORE CATEGORIES */
+/* line 222, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.category {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  max-width: 1650px;
+  min-width: 300px;
+  max-height: 1000px;
+  min-height: 500px;
+}
+
+/* line 235, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.category h1 {
+  font-size: 45px;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 244, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 170px;
+  max-width: 290px;
+  max-height: 260px;
+  overflow: hidden;
+  text-align: center;
+  background: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 70px;
+}
+
+/* line 260, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 * {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border-radius: 70px;
+}
+
+/* line 266, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 img {
+  opacity: 0.25;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+  max-width: 100%;
+}
+
+/* line 275, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+  transform: rotate(0deg) translateY(-50%) scale(1);
+  -webkit-transform-origin: center 0;
+  transform-origin: center 0;
+}
+
+/* line 287, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 figcaption h2 span {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 293, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 figcaption:before,
+figure.snip1091 figcaption:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 305, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 figcaption:before {
+  left: 0;
+  top: 0;
+}
+
+/* line 310, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091 figcaption:after {
+  bottom: 0;
+  right: 0;
+}
+
+/* line 316, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091:hover img {
+  opacity: 1;
+}
+
+/* line 320, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091:hover figcaption {
+  -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+  transform: rotate(-45deg) translateY(-50%) scale(0.9);
+}
+
+/* line 325, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip1091:hover figcaption:before,
+figure.snip1091.hover figcaption:before,
+figure.snip1091:hover figcaption:after,
+figure.snip1091.hover figcaption:after {
+  width: 100%;
+}
+
+/* line 332, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  margin: 10px 1%;
+  min-width: 170px;
+  max-width: 500px;
+  max-height: 300px;
+  overflow: hidden;
+  text-align: center;
+  background: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+/* line 346, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle * {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border-radius: 20px;
+}
+
+/* line 352, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle img {
+  opacity: 0.5;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 300px;
+  max-width: 100%;
+}
+
+/* line 361, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  font-size: 20px;
+  -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+  transform: rotate(0deg) translateY(-50%) scale(1);
+  -webkit-transform-origin: center 0;
+}
+
+/* line 372, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption span {
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 377, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption span :hover {
+  background: gray;
+  color: white;
+}
+
+/* line 382, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption span :visited {
+  color: white;
+}
+
+/* line 386, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption:before,
+figure.snip-shuffle figcaption:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 398, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption:before {
+  left: 0;
+  top: 0;
+}
+
+/* line 403, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle figcaption:after {
+  bottom: 0;
+  right: 0;
+}
+
+/* line 409, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+figure.snip-shuffle:hover img {
+  opacity: 1;
+}
+
+/* line 414, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.modal-text {
+  font-size: 15px;
+  color: darkgray;
+}
+
+/*-----------------------*/
+/*SIGN IN, LOG IN BUTTONS*/
+/* line 421, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.btn-modal {
+  background-color: transparent !important;
+  color: #F5F5F5 !important;
+  border: none !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 13px !important;
+}
+
+/* line 431, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.btn-modal:hover {
+  color: #F5F5F5 !important;
+}
+
+/* line 435, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.navbar-brand {
+  color: #F5F5F5 !important;
+}
+
+/* line 439, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.home-navbar {
+  color: #F5F5F5 !important;
+  text-align: center;
+}
+
+/*-------------------------*/
+/*--SIGNUP/LOGIN IN MODAL--*/
+/*.signup{
+  text-align: center;
+}*/
+/*-----------------------*/
+/*news-feed-box*/
+/* line 455, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#news_feed_table {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  border: 10px;
+  z-index: 10000;
+}
+
+/* line 464, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#news_feed_btn:focus {
+  outline: 0 !important;
+}
+
+/* line 468, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.activity {
+  padding: 10px;
+  text-align: right;
+  font-size: 16px;
+  font-family: courier;
+}
+
+/* line 475, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.activity:hover {
+  background: lightgray;
+}
+
+/* line 479, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.activity a:hover {
+  background: transparent;
+}
+
+/* line 482, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#news_feed_table_title {
+  text-align: center;
+  font-weight: bold;
+  font-family: courier;
+  letter-spacing: 8px;
+  color: white;
+}
+
+/* line 490, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#news_feed_table th {
+  background: darkseagreen;
+}
+
+/* line 493, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#shuffle-img {
+  width: 500px;
+  height: 300px;
+}
+
+/* line 498, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#shuffle-title {
+  font-size: 20px;
+  font-family: helvetica;
+}
+
+/* line 503, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+.btn-ajax {
+  background: transparent;
+}
+
+/* line 507, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#ajax-btn {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* line 521, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#ajax-btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 527, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#ajax-btn svg rect {
+  stroke: #ffffff;
+  stroke-width: 6;
+  stroke-dasharray: 422, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* line 537, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/homepage.scss */
+#ajax-btn:hover svg rect {
+  stroke-width: 10;
+  stroke-dasharray: 111, 222;
+  stroke-dashoffset: 233;
+}
+/*START A CAMPAIGN*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* line 7, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.project_bg {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  height: 100%;
+  color: white;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 21, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.project_bg h1 {
+  font-size: 35px;
+  line-height: 1.3;
+  color: white;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/*index page*/
+/* line 34, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+h1.description {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+
+/* line 42, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+div.container {
+  width: 85%;
+}
+
+/* line 46, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #999;
+  padding-bottom: 5px;
+}
+
+/* line 53, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.col-md-4 a {
+  color: #fff;
+}
+
+/* line 57, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-filter: opacity(80%);
+  /* Chrome, Safari, Opera */
+  filter: opacity(30%);
+}
+/* line 61, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.img:hover .linkoffun {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  color: white;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+/* line 72, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+div.img {
+  width: 350px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 83, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.linkoffun {
+  opacity: 0.0;
+  color: black;
+  font-size: 40px;
+}
+
+/*summary length*/
+/* line 90, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.text {
+  /*display: block;*/
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+  font-size: 14px;
+}
+
+/*stat bar*/
+/* line 101, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.task-status {
+  width: 100%;
+  float: left;
+  height: 34px;
+}
+
+/* line 107, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.status-bar {
+  float: left;
+  height: 20px;
+  width: 90%;
+  padding: 7px 0;
+}
+
+/* line 114, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.status-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #ebebeb;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 123, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.status-fill {
+  position: relative;
+  background: #8CE2FF;
+  border-radius: 3px;
+  height: 20px;
+  width: 50%;
+  /*default*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 132, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.status-text {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  /* sketchy center-it: 50% -->  then 1/2 width <--  */
+  color: #656565;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  z-index: 100;
+  display: inline-block;
+  width: 40px;
+}
+
+/*https://www.youtube.com/watch?v=wJF5NXygL4k*/
+/* line 152, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.btn-pref .btn {
+  -webkit-border-radius: 0 !important;
+}
+
+/* line 156, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+img.bookings {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  right: 35%;
+}
+
+/*carousel*/
+/* line 164, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+/* line 168, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+ol.carousel-indicators li {
+  border: 1px solid;
+  color: black;
+  opacity: 0.5;
+}
+
+/*show.html.erb*/
+/*tabs panel*/
+/* line 177, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+img.show-image {
+  padding-left: 65px;
+  padding-bottom: 20px;
+}
+
+/* line 182, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.carousel-control.left {
+  background-color: transparent;
+}
+
+/* line 186, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.carousel-control.right {
+  background-color: transparent;
+}
+
+/* line 190, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.carousel-caption {
+  margin-top: 132px;
+}
+
+/* line 194, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.bolded {
+  font-weight: bold;
+}
+
+/*donation tab*/
+/* line 208, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.donation-button {
+  font-family: 'Open Sans';
+  background: #f5f7fa;
+}
+
+/* line 213, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.popover-container {
+  width: 700px;
+  padding: 16px 0 0;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  /*&:hover {
+    cursor: pointer;
+    background: $hover-color;
+  }*/
+}
+/* line 222, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.popover-container .back-button {
+  position: absolute;
+  top: -18px;
+  left: -17px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #999;
+  text-align: center;
+}
+/* line 238, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.popover-container i {
+  color: #fff;
+  margin-top: 2px;
+}
+
+/* line 244, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.popover-header {
+  flex: 1;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* line 251, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+}
+/* line 257, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 40%;
+  margin: 3px;
+  padding: 15px 0 15px 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  color: #999;
+  font-weight: 300;
+}
+/* line 269, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button:last-child {
+  margin: 10px 0;
+}
+/* line 273, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button:hover {
+  background-color: #5d9cec;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 279, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button:hover i {
+  color: #fff;
+}
+/* line 283, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5d9cec;
+}
+/* line 290, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.payment-buttons .payment-button .payment-button-text {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/*search_index page*/
+/* line 301, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.project-summary {
+  font-size: 15px;
+}
+
+/* line 304, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/projects.scss */
+.project-donation {
+  font-size: 15px;
+}
+/* line 1, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 34, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 39, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 43, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 49, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 57, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 68, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard {
+  margin: 20px auto;
+  background: #fff;
+}
+
+/* line 10, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .nav-tabs {
+  position: relative;
+  margin: 40px auto;
+  margin-bottom: 0;
+  border-bottom-color: #e0e0e0;
+}
+
+/* line 17, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard > div.wizard-inner {
+  position: relative;
+}
+
+/* line 21, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.connecting-line {
+  height: 2px;
+  background: #e0e0e0;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+/* line 33, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent;
+}
+
+/* line 40, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+span.round-tab {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  border-radius: 100px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* line 54, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+span.round-tab i {
+  color: #555555;
+}
+
+/* line 57, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard li.active span.round-tab {
+  background: #fff;
+  border: 2px solid #5bc0de;
+}
+
+/* line 62, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard li.active span.round-tab i {
+  color: #5bc0de;
+}
+
+/* line 66, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+span.round-tab:hover {
+  color: #333;
+  border: 2px solid #333;
+}
+
+/* line 71, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .nav-tabs > li {
+  width: 25%;
+}
+
+/* line 75, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard li:after {
+  content: " ";
+  position: absolute;
+  left: 46%;
+  opacity: 0;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 5px solid transparent;
+  border-bottom-color: #5bc0de;
+  transition: 0.1s ease-in-out;
+}
+
+/* line 87, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard li.active:after {
+  content: " ";
+  position: absolute;
+  left: 46%;
+  opacity: 1;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 10px solid transparent;
+  border-bottom-color: #5bc0de;
+}
+
+/* line 98, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .nav-tabs > li a {
+  width: 70px;
+  height: 70px;
+  margin: 20px auto;
+  border-radius: 100%;
+  padding: 0;
+}
+
+/* line 106, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .nav-tabs > li a:hover {
+  background: transparent;
+}
+
+/* line 110, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard .tab-pane {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* line 115, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.wizard h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 585px) {
+  /* line 121, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+  .wizard {
+    width: 90%;
+    height: auto !important;
+  }
+
+  /* line 126, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+  span.round-tab {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  /* line 133, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+  .wizard .nav-tabs > li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  /* line 139, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+  .wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 35%;
+  }
+}
+/*donation heart*/
+/* line 147, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.donateContainer {
+  position: relative;
+  width: 207px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* line 153, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.donate {
+  margin: auto;
+  position: relative;
+  height: 82px;
+  width: 160px;
+  z-index: 2;
+  display: block;
+}
+
+/* line 161, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.donate:hover + .rays {
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+  margin-top: -105px;
+}
+
+/* line 167, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/transactions.scss */
+.rays {
+  transform-origin: center;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: -30px;
+  z-index: 1;
+  opacity: 0;
+  transition: .5s ease-out;
+  animation: godrays 10s ease-in-out alternate infinite;
+}
+
+@keyframes godrays {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400);
+/* line 6, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.modal-content {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+  margin: auto;
+  padding-bottom: 50px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 750px;
+  color: white;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #50a3a2 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #50a3a2 100%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 27, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.modal-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 33, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.field {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 43, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.button {
+  appearance: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 6px;
+  min-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 62, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 78, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+
+/* line 81, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+}
+
+/* line 90, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* line 95, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+  animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 103, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+
+/* line 106, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 114, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+/* line 121, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+}
+
+/* line 130, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 140, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+  }
+}
+/* line 190, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 207, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+body {
+  background-color: #f8f8f8;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* line 213, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.wrapper {
+  width: 1170px;
+  margin: 102px auto 102px;
+  background-color: #ffffff;
+  max-height: 874px;
+  overflow: hidden;
+}
+
+/* line 220, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.container {
+  width: 1187px;
+  float: left;
+  height: 874px;
+  overflow-y: scroll;
+}
+
+/* line 223, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header {
+  height: 60px;
+  width: 100%;
+  padding: 12px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 228, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-top: 7px;
+}
+/* line 236, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .logo img {
+  vertical-align: middle;
+}
+/* line 239, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .logo span {
+  padding-left: 8px;
+  letter-spacing: 1px;
+}
+/* line 244, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .logo:hover span {
+  color: #0000ff;
+}
+/* line 249, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right {
+  display: block;
+  float: right;
+}
+/* line 252, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input {
+  border: 1px solid #d9d9d9;
+  width: 285px;
+  height: 36px;
+  padding-left: 17px;
+  margin-right: 50px;
+  color: #999999;
+}
+/* line 195, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input::-webkit-input-placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+}
+/* line 196, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:-moz-placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+}
+/* line 197, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input::-moz-placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+}
+/* line 198, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:-ms-input-placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+}
+/* line 265, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:focus {
+  outline: none;
+}
+/* line 195, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 196, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 197, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 198, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 272, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right a {
+  color: #999999;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 5px;
+}
+/* line 277, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right a:last-child {
+  padding-right: 0;
+}
+/* line 280, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+header .right a.active {
+  color: #0000ff;
+}
+
+/* line 289, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside {
+  width: 315px;
+  padding: 29px 30px 0;
+  text-align: center;
+  float: left;
+}
+/* line 294, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .profile-image {
+  margin-bottom: 27px;
+}
+/* line 297, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside h1 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+/* line 304, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .description {
+  color: #999999;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+/* line 310, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .link {
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 28px;
+  color: #0000ff;
+  font-weight: 600;
+}
+/* line 318, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .follow {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-decoration: none;
+  width: 125px;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+  margin: 0 auto 30px;
+}
+/* line 328, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .follow:hover {
+  text-decoration: underline;
+}
+/* line 333, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div {
+  margin-bottom: 30px;
+}
+/* line 335, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div:before {
+  content: '';
+  background-color: #e6e6e6;
+  width: 65px;
+  height: 1px;
+  margin: 0 auto 28px;
+  display: block;
+}
+/* line 343, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div a {
+  display: block;
+}
+/* line 345, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div a img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 350, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div span {
+  display: block;
+}
+/* line 352, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div span:first-child {
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+/* line 358, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+aside .social div span:nth-child(2) {
+  font-size: 30px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* line 369, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content {
+  border-left: 1px solid #e6e6e6;
+  min-height: 300px;
+  float: left;
+  width: 80%;
+}
+/* line 374, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article {
+  padding: 30px 0 27px;
+  margin: 0 29px;
+  border-bottom: 1px solid #e6e6e6;
+  width: -moz-calc(100% - 60px);
+  width: -webkit-calc(100% - 60px);
+  width: -o-calc(100% - 60px);
+  width: calc(100% - 60px);
+  float: left;
+}
+/* line 380, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article:last-child {
+  border: none;
+}
+/* line 383, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .thumbnail {
+  width: 320px;
+  height: 184px;
+  float: left;
+}
+/* line 388, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post {
+  margin-left: 30px;
+  float: left;
+  width: 70%;
+}
+/* line 392, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info {
+  width: 100%;
+  display: block;
+}
+/* line 395, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .author {
+  float: left;
+}
+/* line 397, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .author div {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  float: left;
+}
+/* line 405, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .author h5 {
+  color: #0000ff;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+/* line 411, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .author .time {
+  font-size: 12px;
+  color: #999999;
+  display: block;
+}
+/* line 417, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .author:hover h5 {
+  text-decoration: underline;
+}
+/* line 422, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .numbers {
+  float: right;
+  padding-top: 4px;
+}
+/* line 425, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .numbers a {
+  display: inline-block;
+  color: #999999;
+  text-decoration: none;
+}
+/* line 429, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .numbers a img {
+  float: left;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+/* line 434, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .numbers a:not(first-child) {
+  margin-left: 18px;
+}
+/* line 437, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .info .numbers a:hover {
+  color: #0000ff;
+}
+/* line 443, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 447, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about h3 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+/* line 454, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about h3:hover {
+  border-bottom: 2px solid #1a1a1a;
+  margin-bottom: 6px;
+}
+/* line 459, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about p {
+  font: "Lora", serif;
+  color: #1a1a1a;
+  font-size: 15px;
+  line-height: 24px;
+}
+/* line 465, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about a {
+  text-decoration: none;
+}
+/* line 467, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about a.read-more {
+  color: #0000ff;
+  display: block;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-top: 13px;
+}
+/* line 473, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article .post .post-about a.read-more:hover {
+  text-decoration: underline;
+}
+/* line 483, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/users.scss */
+.content article > a:hover + .post h3 {
+  border-bottom: 2px solid #1a1a1a;
+  margin-bottom: 6px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 19, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+div.col-md-4 {
+  padding-top: 40px;
+}
+
+/* line 23, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+h1.description {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+
+/* line 31, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+div.container {
+  width: 85%;
+}
+
+/* line 35, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #999;
+  padding-bottom: 5px;
+}
+
+/* line 42, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.col-md-4 a {
+  color: #fff;
+}
+
+/* line 46, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-filter: opacity(80%);
+  /* Chrome, Safari, Opera */
+  filter: opacity(30%);
+}
+/* line 50, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.img:hover .linkoffun {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  color: white;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+/* line 61, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+div.img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  float: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 71, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.linkoffun {
+  opacity: 0.0;
+  color: black;
+  font-size: 40px;
+}
+
+/*https://www.youtube.com/watch?v=wJF5NXygL4k*/
+/* line 81, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.btn-pref .btn {
+  -webkit-border-radius: 0 !important;
+}
+
+/* line 85, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+img.bookings {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  right: 35%;
+}
+
+/*carousel*/
+/* line 93, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+/* line 97, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+ol.carousel-indicators li {
+  border: 1px solid;
+  color: black;
+  opacity: 0.5;
+}
+
+/* line 103, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+.high {
+  max-height: 40px;
+}
+
+/* line 108, /home/nextacademy/Desktop/Final Project/crowdfunding/app/assets/stylesheets/application.css.scss */
+#searchbar-form {
+  background-color: transparent !important;
+}

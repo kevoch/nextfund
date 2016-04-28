@@ -189,7 +189,8 @@ $gray: #999999;
 
 * {-webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale; 
-  text-rendering: optimizeLegibility;}
+  text-rendering: optimizeLegibility;
+  }
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content;}
