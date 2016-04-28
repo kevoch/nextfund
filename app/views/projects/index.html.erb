@@ -31,7 +31,7 @@
         </figure>
 
         <figure class="snip10911">
-        <a href="#5"><img src="http://www.live58.org/Portals/209485/images/10%20facts%20about%20natural%20disasters%20-%20banner.jpg" />
+        <a href="#5"><img src="http://www.sostinternational.com/test/wordpress/wp-content/uploads/2013/04/DISASTER-4.jpg" />
         <figcaption>
         <h2><span>disasters</span></h2>
         </figcaption></a>
@@ -42,14 +42,14 @@
 
 <div class ="project_list">
  <div class="row" style="border:none; padding-bottom: 30px;">
-  <h1 class="description" id="1" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase;text-transform: uppercase;">Education</h1>
-    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+  <h1 class="description" id="1" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase;text-transform: uppercase;">Education</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All",projects_showall_path ,style:"color:black;"%></span>
       <% @educations.each do |p| %>
-        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
-          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
             <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
-                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
                     <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
                       <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
                         <div class="task-status">
@@ -68,14 +68,14 @@
 
 <div class ="project_list">
  <div class="row" style="border:none; padding-bottom: 30px;">
-  <h1 class="description" id="2" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Community</h1>
-    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+  <h1 class="description" id="2" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Community</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All",projects_showall_path ,style:"color:black;"%></span>
       <% @communities.each do |p| %>
-        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
-          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
             <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
-                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
                     <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
                       <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
                         <div class="task-status">
@@ -95,14 +95,14 @@
 
 <div class ="project_list">
  <div class="row" style="border:none; padding-bottom: 30px;">
-  <h1 class="description" id="3" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Environment</h1>
-    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+  <h1 class="description" id="3" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Environment</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All",projects_showall_path ,style:"color:black;"%></span>
       <% @environments.each do |p| %>
-        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
-          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;width:320px;background-image: url(<%= p.images.first.url %>)">
             <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
-                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
                     <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
                       <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
                         <div class="task-status">
@@ -121,14 +121,14 @@
 
 <div class ="project_list">
  <div class="row" style="border:none; padding-bottom: 30px;">
-  <h1 class="description" id="4" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Medical</h1>
-    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+  <h1 class="description" id="4" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Medical</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All",projects_showall_path ,style:"color:black;"%></span>
       <% @medicals.each do |p| %>
-        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
-          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
             <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
-                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
                     <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
                       <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
                         <div class="task-status">
@@ -147,14 +147,14 @@
 
 <div class ="project_list">
  <div class="row" style="border:none; padding-bottom: 30px;">
-  <h1 class="description" id="5" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Disaster</h1>
-    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+  <h1 class="description" id="5" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Disaster</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All",projects_showall_path ,style:"color:black;"%></span>
      <% @disasters.each do |p| %>
-        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
-          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
             <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
-                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+             <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
                     <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
                       <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
                         <div class="task-status">
@@ -173,3 +173,30 @@
 
 
 </div> 
+
+<footer>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <div class="footer_stuff">
+    <table style="border:none;margin:auto;">
+      <tr>
+        <th style="color:white; padding-top: 100px;">Campaign</th>
+        <th style="color:white; padding-top: 100px;">About Next Fund</th>
+        <th style="color:white; padding-top: 100px;">Social Media</th>
+      </tr>
+      <tr>
+        <td style="color:white;">Start a Campaign</td>
+        <td style="color:white;">How it Works</td>
+        <td style="color:white;"><i class="fa fa-facebook-square" style="font-size:48px;color:white;margin-right: 20px;"></i><i class="fa fa-twitter" style="font-size:48px;color:white;margin-right: 20px;"></i><i class="fa fa-instagram" style="font-size:48px;color:white"></i></td>
+      </tr>
+      <tr>
+        <td style="color:white;">Discover</td>
+        <td style="color:white;">About Us</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td style="color:white;"> <br>Copyrights</td>
+      <td></td>
+      </tr>
+
+  </div>
+</footer>

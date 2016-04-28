@@ -7,40 +7,31 @@
   </div>
 <%else%>  
 
-  
- <div class ="container">
 
- <div class="row">
-  <h1 class="description" id="1">Search results.</h1><h4 style="padding-left: 90%; top: 20px;"></h4>
-  <% @projects.each do |p| %>
-      <div class= "col-md-4"> 
-       <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
-         <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
-         <h2><%= p.campaign_title.upcase %></h2>
-         <p class="project-summary"><b>Summary: </b><%= truncate(p.summary, :length => 150) %><%= link_to "(read more)", project_path(p)%></p>
-         <p class="project-donation"><b>Amount needed: </b> USD <%= number_with_delimiter(p.amount_needed) %> </p>
-         <p class="project-donation"><b>Amount pledged: </b>
-          <% if p.amount_achieved == nil%>
-            USD 0
-          <% else %>
-            USD <%= number_with_delimiter(p.amount_achieved) %> </p>
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="1" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase;text-transform: uppercase;">Search Results</h1>
+      <% @projects.each do |p| %>
+        
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
           <% end %>
-         <div class="task-status">
-      <div class="status-bar">
-        <div class="status-track">
-           <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
-          <span class="status-text"><%=perc%></span>
-          <div class="status-fill" style="width:<%=perc%>"></div>
-        </div>
-      </div>
-</div>
-   </div>
-   <% end %>
+        
  </div>
 </div>
-
-<% @projects.each do |p| %>
-<%= link_to "Show Me!", project_path(p), class:"linkoffun" %>
-<% end %>
 <%end%>
-

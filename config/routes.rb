@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'homepage/shuffle' => 'homepage#shuffle'
 
   get 'activities/index'
-
+  get '/projects/showall'
  post 'search', to: 'search#search'
  get 'search', to: 'search#search'
 

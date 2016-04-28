@@ -15,11 +15,11 @@
  *= require_self
  */
 
-div.col-md-4 {
+div.col-md-4{
   padding-top: 40px;
 }
 
-h1.description {
+h1.description{
   font-weight: bold;
   letter-spacing: 2px;
   color: #999;
@@ -27,11 +27,11 @@ h1.description {
   padding-bottom: 5px;
 }
 
-div.container {
+div.container{
   width: 85%;
 }
 
-h3 {
+h3{
   font-weight: bold;
   letter-spacing: 1px;
   color: #999;
@@ -42,24 +42,22 @@ h3 {
   color:#fff;
 }
 
-.img:hover {
+.img:hover{
   background-color: rgba(0, 0, 0, 0.5); 
   -webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
     filter: opacity(30%);
-}
-
-.img:hover .linkoffun {
+  .linkoffun{
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out 0s;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-  color: white;
-  font-size: 40px;
-  font-variant: small-caps
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    color: white;
+    font-size: 40px;
+    font-variant: small-caps
+  }
 }
 
-
-div .img {
+div.img{
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -69,20 +67,21 @@ div .img {
   text-align: center;
 }
 
-
-.linkoffun {
+.linkoffun{
   opacity: 0.0;
   color: black;
-  font-size: 40px;
+  font-size: 40px
 }
+
+/*https://www.youtube.com/watch?v=wJF5NXygL4k*/
+
 
 
 .btn-pref .btn {
-  -webkit-border-radius:0 !important;
+    -webkit-border-radius:0 !important;
 }
 
-
-img .bookings {
+img.bookings {
   width:400px;
   height:250px;
   position: absolute;
@@ -90,12 +89,11 @@ img .bookings {
 }
 
 /*carousel*/
-.carousel-control.left, .carousel-control .right {
-    background-image: none;
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
-
-ol .carousel-indicators li {
+ol.carousel-indicators li{
   border: 1px solid;
   color: black;
   opacity: 0.5;
@@ -104,13 +102,3 @@ ol .carousel-indicators li {
 .high {
   max-height:40px;
 }
-
-
-#searchbar-form {
-  background-color:transparent !important;
-}
-
-
-
-
-

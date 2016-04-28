@@ -14,6 +14,9 @@ class ProjectsController < ApplicationController
     @disasters = Project.where(category: "Disaster").order(cached_votes_up: :desc).limit(3)
   end
 
+  def showall
+    @projects =Project.all
+  end
   # GET /projects/1
   # GET /projects/1.json
   def show
