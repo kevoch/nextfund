@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  get '/about_us' => 'about_us#index'
+
   match 'users/:id' => 'users#show', via: :get
 
   resources :transactions, only: [:new, :create]
