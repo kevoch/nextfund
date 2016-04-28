@@ -1,0 +1,63 @@
+<header>
+	<a href="javascript:;" class="logo">
+		<img src="http://s10.postimg.org/40g9shqxx/logo.png" alt="" />
+		<span>Profile.</span>
+	</a>
+	<div class="right">
+		<%= link_to "Edit Profile", edit_user_path(current_user) %>
+	</div>
+</header>
+<section>
+	<aside>
+		<%= image_tag(current_user.avatar.url(:thumb)) %>		
+		<h1 class="name"><%= @user.first_name%></h1>
+		<span class="description"><%= @user.email%></span>
+		
+		<ul class="social">
+			<div>
+				<span>campaigns created.</span>
+				<span>
+					<%= @user.projects.count%>
+				</span>
+			</div>
+
+			<div>
+				<span>campaigns sponsored.</span>
+				<span>
+					<%= @user.transactions.count%>
+				</span>
+			</div>
+		</ul>
+	</aside>
+	<div class="content">
+		<% current_user.projects.each do |p| %>
+		<article>
+			<div class="thumbnail" style= "background-image: url(<%= p.images.first.url %>)">
+			</div>
+			<div class="post">
+				<div class="info">
+					<a href="javascript:;">
+						<div class="author">
+							<h5>by <%= @user.first_name%></h5>
+							<span class="time"><%= @user.created_at%></span>
+						</div>
+					</a>
+					<div class="numbers">
+						<a href="javascript:;">
+							<img src="http://s13.postimg.org/lazw4xr2r/heart.png" alt="" />
+							<%= p.cached_votes_up %>
+						</a>
+					</div>
+				</div>
+				<div class="post-about">
+					<a href="javascript();">
+						<h3><%= p.campaign_title %></h3>
+					</a>
+					<p><%= p.summary %></p>
+					<%= link_to "Read more", project_path(p), class:"read-more" %>
+				</div>
+			</div>
+		</article>
+		<% end %>
+	</div>
+</section>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crowdfunding</title>
+  <link rel="icon" type="image/png" href="https://files.slack.com/files-pri/T02Q6C0P2-F135Y0PRS/_small_nextfund_logo.jpg">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+
+
+</head>
+<body>
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+
+
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+
+<nav class="navbar navbar-inverse" style="margin-bottom: 0px; background-color: black; border:0px;">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">NextFund</a>
+    </div>
+
+    <div class="col-sm-3 col-md-3">
+        <form class="navbar-form" role="search" action="/search/" method="get">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q" id="searchbar-form" style="background:transparent;">
+
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" style="background:transparent;"><i class="glyphicon glyphicon-search" style="color:lightgray;"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+
+
+    <ul class="nav navbar-nav" style="float:right;">
+
+      <li><button id="news_feed_btn" class="btn btn-primary btn-md btn-modal">News Feed</button></li>
+      <li><%= link_to "Home", root_path, class:"home-navbar"%></li>
+      <li><%= link_to "Discover", projects_path, class:"home-navbar"%></li>
+      <li><%= link_to 'Start a campaign', new_project_path, class:"home-navbar"%></li>
+      <li><%= link_to 'About Us', root_path, class:"home-navbar"%></li> <!--to add static page route for about us-->
+
+      <% if signed_in? %>
+        <li><%= link_to "My Profile", user_path(current_user), class:"home-navbar"%> </li>
+	      <li><%= link_to "Signout", destroy_user_session_path, method: :delete, class:"home-navbar" %></li>
+	    <% else %>
+        <li><button type="button" class="btn btn-primary btn-md btn-modal" data-toggle="modal" data-target="#myModal">Sign Up</button></li>
+        <li><button type="button" class="btn btn-primary btn-md btn-modal" data-toggle="modal" data-target="#myModal1">Log In</button></li>
+      <%end%>
+
+    </ul>
+
+  </div>
+</nav>
+  
+  <table id="news_feed_table"> 
+    <tr>
+      <th>
+        <h4 id="news_feed_table_title">TNF's News Feed</h4>
+      </th>
+    </tr>
+
+    <% @activities.each do |activity| %>
+      <tr>
+        <td>
+          <div class="activity">
+          
+
+            <% if activity.key == 'project.donation_milestone'%>
+              Project <em><%= link_to activity.trackable.campaign_title, activity.trackable%></em> 's total donation has surpassed 95%! Please donate to make it happen!
+            <%else%>
+              <%= link_to activity.owner.first_name, activity.owner if activity.owner %>
+              <%= render_activity activity%>
+            <% end %>
+             
+      
+      </div>
+    <% end %>
+        </td>
+    </tr>
+  </table>
+
+<%= yield %>
+
+
+<!-- Modal -->
+
+<!-- <div class="">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg"> -->
+    
+      <!-- Modal content-->
+
+      <!-- <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <%# render "devise/registrations/new" %>
+        </div> -->
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <%= render "devise/registrations/new" %>
+
+      </div>
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content" style="height:450px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Log In</h4>
+      </div>
+      <div class="modal-body1">
+        <%= render "devise/sessions/new" %>
+      </div>
+       <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+   
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="shuffleModal" class="modal fade" role="dialog">
+  
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="  background:white;
+; text-align: left; text-transform: uppercase; padding:0px;width:1000px;">
+      <div class="modal-header" style="padding:50px;border:none;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="text-align: center; letter-spacing: 3px; color:gray;">Thank you for your generosity!</h4>
+                <div id="loading-gif" style="display: none; text-align: center; ">
+          <img src="loading.gif">
+
+      </div>
+      <div class="modal-body" style="border:none; padding:0px;">
+        <div id="shuffle-image"></div>
+        <div id="shuffle-title" style="font-size:14px; font-weight: 800;"></div>
+       
+      <div class="modal-footer" style="border:none;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+

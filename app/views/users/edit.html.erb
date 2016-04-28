@@ -1,0 +1,6 @@
+<%= form_for @user do |f| %>
+    <label>Profile Picture</label>
+    <%= f.file_field :avatar %><br />
+    <class="submit-field">
+      <%= f.submit value= "upload"%>
+<% end %>

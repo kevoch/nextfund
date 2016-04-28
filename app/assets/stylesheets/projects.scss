@@ -1,0 +1,305 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*START A CAMPAIGN*/
+.project_bg{
+text-align: center;
+  width:100%;
+  margin:auto;
+  padding-bottom: 50px;
+  height:100%;
+  color:white;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+
+.project_bg h1{
+    font-size: 35px;
+  line-height: 1.3;
+  color:white;
+  font-weight:800;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+
+/*index page*/
+
+
+h1.description{
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #999;
+	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+	padding-bottom: 5px;
+}
+
+div.container{
+	width: 85%;
+}
+
+h2{
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #999;
+	padding-bottom: 5px;
+}
+
+.col-md-4 a{
+	color:#fff;
+}
+
+.img:hover{
+	background-color: rgba(0, 0, 0, 0.5); 
+	-webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
+    filter: opacity(30%);
+	.linkoffun{
+	opacity: 1;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    color: white;
+    font-size: 40px;
+    font-variant: small-caps
+	}
+}
+
+div.img{
+  width:350px;
+  height:200px;
+  background-repeat: no-repeat;
+	background-size: cover;
+	float: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.linkoffun{
+	opacity: 0.0;
+	color: black;
+	font-size: 40px
+}
+
+/*summary length*/
+.text {
+  /*display: block;*/
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color:white;
+  font-size:14px;
+}
+
+/*stat bar*/
+.task-status {
+  width: 100%;
+  float: left;
+  height: 34px;
+}
+
+.status-bar {
+  float:left;
+  height: 20px;
+  width: 90%;
+  padding: 7px 0;
+}
+
+.status-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #ebebeb;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+
+.status-fill {
+  position: relative;
+  background: #8CE2FF;
+  border-radius: 3px;
+  height: 20px;
+  width: 50%; /*default*/
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+
+.status-text {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px; /* sketchy center-it: 50% -->  then 1/2 width <--  */
+  color: #656565;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  z-index: 100;
+  display: inline-block;
+  width: 40px;
+}
+
+
+/*https://www.youtube.com/watch?v=wJF5NXygL4k*/
+
+
+
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+img.bookings {
+	width:400px;
+	height:250px;
+	position: absolute;
+	right: 35%;
+}
+
+/*carousel*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+ol.carousel-indicators li{
+	border: 1px solid;
+	color: black;
+	opacity: 0.5;
+}
+
+
+/*show.html.erb*/
+/*tabs panel*/
+img.show-image{
+	padding-left: 65px;
+	padding-bottom: 20px;
+}
+
+.carousel-control.left{
+ background-color: transparent; 
+}
+
+.carousel-control.right{
+ background-color: transparent; 
+}
+
+.carousel-caption{
+	margin-top: 132px;
+}
+
+.bolded{
+	font-weight: bold;
+}
+
+
+/*donation tab*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+$popover-container-color: #fff;
+$back-button-background: #999;
+$back-button-color: #fff;
+$hover-color: #5d9cec;
+$method-button-color: #999;
+ 
+.donation-button {
+  font-family: 'Open Sans';
+  background: #f5f7fa;
+}
+
+.popover-container {
+  width: 700px;
+  padding: 16px 0 0;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+  background: $popover-container-color;
+
+  .back-button {
+    position: absolute;
+    top: -18px;
+    left: -17px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: $back-button-background;
+    text-align: center;
+	}
+        
+    /*&:hover {
+      cursor: pointer;
+      background: $hover-color;
+    }*/
+    
+    i {
+      color: $back-button-color;
+      margin-top: 2px;
+    }
+  }
+
+  .popover-header {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .payment-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    
+    .payment-button {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-width: 40%;
+      margin: 3px;
+      padding: 15px 0 15px 20px;
+      border: 1px solid $method-button-color;
+      border-radius: 5px;
+      color: $method-button-color;
+      font-weight: 300;
+      
+      &:last-child {
+        margin: 10px 0;
+      }
+      
+      &:hover {
+        background-color: $hover-color;
+        color: $popover-container-color;
+        cursor: pointer;
+      }
+      
+      &:hover i {
+        color: $popover-container-color;
+      }
+      
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $hover-color;
+      }
+      
+      .payment-button-text {
+        margin: 0 auto;
+        font-size: 20px;
+      }
+    }
+}
+
+
+
+/*search_index page*/
+
+.project-summary{
+  font-size: 15px;
+}
+.project-donation{
+  font-size: 15px;
+}

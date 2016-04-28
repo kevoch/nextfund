@@ -1,0 +1,175 @@
+<div class="discover">
+
+    <div class="category1" >
+      <h1 style="font-weight: 900;">Discover</h1>
+        <figure class="snip10911">
+        <a href="#1"><img src="https://g0.iggcdn.com/assets/site/home_category_tiles/Desktop/education-fdcfdba5d24c91494ded2158d7993ab90f5c9442589fa166acf0021bbefb9116.png" />
+        <figcaption>
+        <h2><span>education</span></h2>
+        </figcaption></a>
+        </figure>
+
+        <figure class="snip10911">
+        <a href="#2"><img src="http://www.globalvolunteernetwork.org/southafrica/main.jpg" />
+        <figcaption>
+        <h2><span>community</span></h2>
+        </figcaption></a>
+        </figure>
+
+        <figure class="snip10911">
+        <a href="#3"><img src="http://meansusa.org/sites/default/files/coc-31.jpg" />
+        <figcaption>
+        <h2><span>environment</span></h2>
+        </figcaption></a>
+        </figure>
+
+        <figure class="snip10911">
+        <a href="#4"><img src="http://blogs-images.forbes.com/cit/files/2015/04/doctor-with-tablet-1940x1292.jpg" />
+        <figcaption>
+        <h2><span>medical</span></h2>
+        </figcaption></a>
+        </figure>
+
+        <figure class="snip10911">
+        <a href="#5"><img src="http://www.live58.org/Portals/209485/images/10%20facts%20about%20natural%20disasters%20-%20banner.jpg" />
+        <figcaption>
+        <h2><span>disasters</span></h2>
+        </figcaption></a>
+        </figure>
+
+    </div>
+
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="1" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase;text-transform: uppercase;">Education</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+      <% @educations.each do |p| %>
+        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
+          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+ </div>
+</div>
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="2" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Community</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+      <% @communities.each do |p| %>
+        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
+          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+ </div>
+</div>
+
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="3" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Environment</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+      <% @environments.each do |p| %>
+        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
+          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+ </div>
+</div>
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="4" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Medical</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+      <% @medicals.each do |p| %>
+        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
+          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+ </div>
+</div>
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="5" style="color:rgb(153, 153, 153);border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase; " >Disaster</h1>
+    <span style="float: right; font-size:12px;"><%=link_to "See All" ,style:"color:white;"%></span>
+     <% @disasters.each do |p| %>
+        <div class= "col-md-4" style="width: 360px; height: 500px; padding: 20px; margin-left:75px;"> 
+          <div class="img" style= "background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 800;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left"class="text"><b>Summary: </b><%= p.summary %> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+ </div>
+</div>
+
+
+</div> 

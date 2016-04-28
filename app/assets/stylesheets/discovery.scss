@@ -1,0 +1,155 @@
+
+.discover{
+	position:relative;
+	background-color: #36454f;
+	width:100%;
+	margin:auto;
+	padding-top: 50px;
+	height:100%;
+  color:rgb(153,153,153);
+ 
+}
+
+.category1{
+  display:block;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  margin:auto;
+  text-transform: uppercase;
+  padding-left: 20px;
+   max-width: 1650px;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 400px;
+
+}
+
+.category1 h1 {
+  font-size: 45px;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+figure.snip10911 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 170px;
+  max-width: 290px;
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  background: #000000;
+  border-radius: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure.snip10911 * {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border-radius: 70px;
+}
+
+figure.snip10911 img {
+  opacity: 0.25;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+  max-width: 100%;
+
+}
+
+figure.snip10911 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+  transform: rotate(0deg) translateY(-50%) scale(1);
+  -webkit-transform-origin: center 0;
+  transform-origin: center 0;
+}
+
+
+figure.snip10911 figcaption h2 span {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+figure.snip10911 figcaption:before,
+figure.snip10911 figcaption:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.snip10911 figcaption:before {
+  left: 0;
+  top: 0;
+}
+
+figure.snip10911 figcaption:after {
+  bottom: 0;
+  right: 0;
+}
+
+
+figure.snip10911:hover img{
+  opacity: 1;
+}
+
+figure.snip10911:hover figcaption{
+  -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+  transform: rotate(-45deg) translateY(-50%) scale(0.9);
+}
+
+figure.snip10911:hover figcaption:before,
+figure.snip10911.hover figcaption:before,
+figure.snip10911:hover figcaption:after,
+figure.snip10911.hover figcaption:after {
+  width: 100%;
+}
+
+.project_list{
+  width:100%;
+  max-width: 1400px;
+  margin:auto;
+}
+
+
+.row{
+  width: 100%;
+  border:2px solid black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color:#36454f;
+}
+.col-md-4{
+  border:none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin-left: 50px; 
+  margin-top: 50px;
+  background:transparent;
+  -webkit-transition: all 1s ease;
+  background-color: transparent;
+
+}
+
+.col-md-4:hover{
+-webkit-transform:scale(1.25);
+}
+

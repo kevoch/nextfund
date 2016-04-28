@@ -1,0 +1,127 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+        <div class="field1">
+          <%= f.hidden_field :user_id %>
+          </div>
+   <div class="campaign_bg">
+        <h1 style="margin-top: 0px;"> Start a Campaign </h1>
+
+        <table style="width:100%; max-width: 1200px; margin:auto;">
+          <tr>
+           <th style="padding: 40px;">Title
+           <p> What do you want to raise money for?</p></th>
+              <td style="padding: 40px;">
+
+              <div class="title_input">
+              <span class="glyphicon glyphicon-edit"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+              <%= f.text_field :campaign_title, autofocus: true, class:"title_bar", placeholder:"CAMPAIGN TITLE" %>
+              </div></td>
+
+          </tr>    
+
+          <tr>
+            <th style="padding: 40px;">Goal
+              <p>How much do you want to raise</p></th>
+                <td style="padding: 40px;">
+                <div class="title_input">
+                <span class="glyphicon glyphicon-flag"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+                   <%= f.text_field :amount_needed, autofocus: true, class:"title_bar", placeholder:"RM 500,000"%>
+                </div></td>
+                  
+          </tr>
+          <tr>
+            <th style="padding: 40px;">Picture
+             <p>Personalzie your fundraiser by adding a picture. This image willrepresent your fundraise in our browse pages and act as yourfundraiser’s main image if you don'tadd a video.</p></th>
+              <td style="padding: 40px;">
+              <div class="title_input">
+                <span class="glyphicon glyphicon-picture"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+             <%=f.file_field :images, multiple: true, class:"title_bar", style: "padding-top:15px; padding-left:160px;" %>
+              </div></td>
+          </tr>
+          <tr>
+            <th style="padding: 40px;"> Category
+              <p>Help people discover your fundraiser on our site.</p></th>
+                <td style="padding: 40px;">
+                  <div class="title_input">
+                   <span class="glyphicon glyphicon-th-list"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+
+                    
+                    <select class ="title_bar"type="button" data-toggle="dropdown" name="project[category]" id="project_category" style="padding-left:220px; text-transform: uppercase;"> 
+                      <option><value="environment">Environment</a></option>
+                      <option><value="community">Community</a></option>
+                      <option><value="disaster">Disaster</a></option>
+                      <option><value="education">Education</a></option>
+                      <option><value="medical">Medical</a></li>
+                    </select>
+                   
+                  </div></td>
+          </tr>
+          <tr>
+            <th style="padding: 40px;">Location
+              <p>Get support from your local community.</p></th>
+                <td style="padding: 40px;">
+                <div class="title_input">
+                  <span class="glyphicon glyphicon-map-marker"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+                <%= f.text_field :address, autofocus: true, class:"title_bar", placeholder:"LOCATION" %>
+                 
+                 </div></td>
+          </tr>
+
+          <tr>
+            <th style="padding: 40px;">Dead-line
+            <p>How long will your campaign last?</p></th>
+              <td style="padding: 40px;">
+                <div class="title_input" style="height:75px;">
+                  <span class="glyphicon glyphicon-calendar"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+                  <%= f.date_select :deadline%>
+                  
+                </div></td>
+          </tr>
+
+          <tr>
+          <th style="padding: 40px;">Video
+            <p>Add a video to make your fundraiser more engaging</p></th>
+              <td style="padding: 40px;">
+                <div class="title_input">
+                 <span class="glyphicon glyphicon-facetime-video"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+                   <%= f.file_field :video, class:"title_bar", style: "padding-top:15px; padding-left:160px;"%>
+                </div></td>
+         </tr>
+          
+          <tr>
+            <th style="padding: 40px;">Your Story
+              <p>Tell the story about why you're running a fundraiser. </p></th>
+                <td style="padding: 40px;">
+                  <div class="title_input">
+                    <span class=" glyphicon glyphicon-text-size"style="font-size:30px;float:left;margin-right:30px; margin-top: 8px;margin-bottom: 10px;"></span>
+                     <%= f.text_area :summary, autofocus: true, class:"title_bar", style: " height:250px; padding-top:20px;" %>
+                        
+                  </div></td>
+          </tr>
+          <tr>
+          <th>
+          <div class="actions" style="padding-left: 50px;">
+          <%=f.submit class:'button'%>
+          </div></th>
+          </tr>
+          </table>
+          <% end %>
+
+       
+       
+        <%= link_to 'Back', projects_path %> <!-- decide on this link -->
+
+   </div>
+
+  

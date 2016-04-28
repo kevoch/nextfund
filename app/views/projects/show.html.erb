@@ -1,0 +1,201 @@
+<p id="notice"><%= notice %></p>
+<%if !@messages.blank?%>
+  <%@messages.each do |x|%>
+    <p><%=x%></p>
+  <%end%>
+<%end%>
+
+<div class="clock-builder-output"></div>
+
+
+
+<div class="carousel slide" id="screenshot-carousel" data-rise="carousel" style=" height:400px; "><!-- Variable Carousel -->
+      <ol class="carousel-indicators">
+        <% @projects.images.each_with_index do |p, index| %>
+          <% if index == 0 %>
+            <li data-target="screenshot-carousel" data-slide-to="#{index}" class="active"></li>            
+          <% else %>
+            <li data-target="screenshot-carousel" data-slide-to="#{index}"></li>
+          <% end %>
+        <% end %>
+      </ol>
+      <div class="carousel-inner" style=" height:400px;">
+        <% @projects.images.each_with_index do |p, index| %>
+          <% if index == 0 %>
+            <div class="item active">
+              <%= image_tag p.url(:full) %>
+              <div class="clock-builder-output"></div>
+              <div class="carousel-caption">
+              <h1><%= @projects.campaign_title%></h1>
+              </div>
+            </div>
+          <% else %>
+            <div class="item">
+              <%= image_tag p.url(:full) %>
+              <div class="carousel-caption">
+              <h1><%= @projects.campaign_title%></h1>
+              </div>
+            </div>
+          <% end %>            
+        <% end %>
+      </div>
+      <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- End Variable Carousel -->
+
+
+
+<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" id="stars" class="btn btn-default" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      <div class="hidden-xs">Details</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+      <div class="hidden-xs">Campaign Photos</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="favorites" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+      <div class="hidden-xs">Promo Video</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="favorites" class="btn btn-default" href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+      <div class="hidden-xs">Location</div>
+    </button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" id="following" class="btn btn-default" href="#tab5" data-toggle="tab"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+      <div class="hidden-xs">Donate Now!</div>
+    </button>
+  </div>
+</div>
+
+<div class="well">
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="tab1">
+      <b> Campaign title: </b><%= @project.campaign_title %><br />
+      <b> Category: </b><%= @project.category %><br />
+      <b> Address: </b><%= @project.address %><br />
+      <b> Deadline: </b><%= @project.deadline %><br />
+      <b> Summary: </b><%= @project.summary %><br />
+      <b> Amount needed: </b><%= number_with_delimiter(@project.amount_needed) %><br />
+      <b> Amount achieved: </b><%= @project.amount_achieved %><br />
+
+      <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
+       <%= link_to like_project_path(@project), :remote => true, method: :put, class: 'vpos' do%>
+       <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+       <span class="vcount"><%= @project.get_upvotes.size%></span> 
+       <% end %>
+     </button>
+
+     <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
+      <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> <%= link_to 'Donate Now', new_transaction_path + "?id=" + @project.id.to_s %>
+    </button>
+
+    <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
+      <% if can? :update, @project %>
+      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+      <%= link_to "Edit", edit_project_path(@project) %>
+      <% end %>
+    </button>
+
+    <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
+      <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> <%= link_to 'Back', projects_path %>
+    </button>
+
+    <button type="button" class="btn btn-default btn-s" style="border:none; margin-right:30px;">
+     <% if can? :destroy, @project %>
+     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+     <%= link_to "Delete", project_path(@project.id), method: :delete%>
+     <% end %>
+   </button>
+
+ </div>
+
+ <div class="tab-pane fade in" id="tab2">
+  <br /> <% @projects.images.each do |x|%>
+  <%= image_tag x.url(:thumb), class:"show-image"%>
+  <%end%>
+</div>
+
+<div class="tab-pane fade in" id="tab3" style="text-align: center; width: 100%">
+  <%= video_tag(@project.video.url, :controls =>true, :width=>500, :height=>300)  %>
+</div>
+<div class="tab-pane fade in" id="tab4">
+</div>
+
+<div class="tab-pane fade in" id="tab5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <div class ="donation-button">
+    <div class="popover-container">
+      <div class="popover-header">
+        <span>Select a donation/funding method</span>
+      </div>
+
+      <div class="payment-buttons">
+        <div class="payment-button">
+          <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+          <span class="payment-button-text"><%= link_to 'Visa Card', new_transaction_path + "?id=" + @project.id.to_s %></span>
+        </div>
+
+        <div class="payment-button">
+          <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+          <span class="payment-button-text"><%= link_to 'Master Card', new_transaction_path + "?id=" + @project.id.to_s %></span>
+        </div>
+
+        <div class="payment-button">
+          <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+          <span class="payment-button-text"><%= link_to 'Amex', new_transaction_path + "?id=" + @project.id.to_s %></span>
+        </div>
+
+        <div class="payment-button">
+          <i class="fa fa-paypal fa-2x" aria-hidden="true"></i>
+          <span class="payment-button-text"><%= link_to 'Paypal', new_transaction_path + "?id=" + @project.id.to_s %></span>
+        </div>
+
+        <div class="payment-button">
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+          <span class="payment-button-text"><%= link_to 'Others', new_transaction_path + "?id=" + @project.id.to_s %></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="/assets/flipclock.js"></script>
+<style text="text/css">
+      body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { 
+        color: #CCCCCC; background-color: #333333; 
+      } 
+      body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { 
+        background: #323434;
+      } 
+      body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { 
+        color: #323434; 
+      }
+    </style>
+    <script type="text/javascript">
+    $(function(){
+      FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+      var opts = {
+        clockFace: 'DailyCounter',
+        countdown: true,
+        language: 'Custom'
+      };
+      var n =<%=Time.new(@project.deadline.year, @project.deadline.month, @project.deadline.day).to_f%>;        
+      var countdown = n - ((new Date().getTime())/1000); // from: 04/28/2016 10:25 am +0800
+      countdown = Math.max(1, countdown);
+      $('.clock-builder-output').FlipClock(countdown, opts);
+    });
+    </script>
+

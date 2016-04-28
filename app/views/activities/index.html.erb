@@ -1,0 +1,18 @@
+<h1>The Next Fund 's News Feed</h1>
+
+
+
+<% @activities.each do |activity| %>
+  <div class="activity">
+  
+
+    <% if activity.key == 'project.donation_milestone'%>
+      Project <em><%= link_to activity.trackable.campaign_title, activity.trackable%></em> 's total donation has surpassed 95%! Please donate to make it happen!
+    <%else%>
+      <%= link_to activity.owner.first_name, activity.owner if activity.owner %>
+      <%= render_activity activity%>
+    <% end %>
+     
+  
+  </div>
+<% end %>

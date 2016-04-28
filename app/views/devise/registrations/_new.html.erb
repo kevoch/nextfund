@@ -1,0 +1,45 @@
+<!-- <h2>Sign up</h2> -->
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true, style:"width:250px; padding:5px;",placeholder:"FIRST NAME" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autofocus: true, style:"width:250px; padding:5px;", placeholder:"LAST NAME" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, style:"width:250px; padding:5px;", placeholder:"EMAIL" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", style:"width:250px; padding:5px;", placeholder:"PASSWORD" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off", style:"width:250px; padding:5px;", placeholder:"CONFIRM PASSWORD" %>
+  </div>
+<br>
+  <div class="field">
+    <%= f.label :profile_picture %><br />
+<br>
+   <%= f.file_field :avatar, autofocus: true, style:"padding-left:120px;"%>
+  </div>
+
+  <div class="actions">
+    <input class="button" type="submit" name="commit" value="Sign up">
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
