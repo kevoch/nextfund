@@ -4,16 +4,16 @@
 
 
 .modal-content{
-	text-align: center;
-	width:100%;
-	max-width: 600px;
+  text-align: center;
+  width:100%;
+  max-width: 500px;
   min-width: 400px;
-	margin:auto;
-	padding-bottom: 50px;
-	height:100%;
+  margin:auto;
+  padding-bottom: 50px;
+  height:100%;
   min-height: 400px;
-	max-height: 750px;
-	color:white;
+  max-height: 750px;
+  color:white;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #50a3a2 100%);
   background: linear-gradient(to bottom right, #50a3a2 0%, #50a3a2 100%);
   position: absolute;
@@ -25,35 +25,35 @@
 }
 
 .modal-title{
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .field{
-	
-	color:black;
-	text-align: center;
-	text-transform: uppercase;
-	border-radius: 4px;
-	font-family: "Montserrat", sans-serif;
+  
+  color:black;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
 }
 
 
 .button{
-		appearance: none;
+    appearance: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		outline: 0;
-		background-color: white;
-		border: 0;
-		padding: 10px 15px;
-		color: #50a3a2;
-		border-radius:6px;
-		min-width: 100px;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #50a3a2;
+    border-radius:6px;
+    min-width: 100px;
     max-width:200px;
-		cursor: pointer;
-		font-size: 18px;
-		margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
 
@@ -189,8 +189,7 @@ $gray: #999999;
 
 * {-webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale; 
-  text-rendering: optimizeLegibility;
-  }
+  text-rendering: optimizeLegibility;}
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content;}
@@ -218,72 +217,39 @@ body {
     max-height: 874px;
     overflow: hidden;
 }
-.container { width: $wrapper + 17px; float: left; height: 874px;    overflow-y: scroll;}
+.container { width: $wrapper + 17px; float: left; height: 874px;}
 
 // header
 header {
-    height: 60px;
-    width: 100%;
-    padding: 12px 30px;
-    border-bottom: 1px solid $brdr;
-    .logo {
-        display: block;
-        float: left;
-        text-decoration: none;
-        color: $dark;
-        font-weight: 600;
-        text-transform: lowercase;
-        margin-top: 7px;
-        img {
-            vertical-align:middle;
-        }
-        span {
-            padding-left: 8px;
-            letter-spacing: 1px;
-        }
-        &:hover {
-            span {
-                color: $blue;
-            }
-        }
+  height: 60px;
+  width: 100%;
+  padding: 12px 30px;
+  border-bottom: 1px solid $brdr;
+  .logo {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: $dark;
+    font-weight: 600;
+    text-transform: lowercase;
+    margin-top: 7px;
+    img {
+      vertical-align:middle;
     }
-    .right {
-        display: block;
-        float: right;
-        input {
-            border: 1px solid #d9d9d9;
-            width: 285px;
-            height: 36px;
-            padding-left: 17px;
-            margin-right: 50px;
-            color: $gray;
-            @include placeholder {
-                font-family: $font;
-                font-size: 14px;
-                color: $gray;
-                line-height: 14px;
-            }
-            &:focus {
-                outline: none;
-                @include placeholder {
-                    color: transparent;
-                }
-            }
-        }
-        a {
-            color: $gray;
-            font-size: 14px;
-            text-decoration: none;
-            padding: 0 5px;
-            &:last-child {
-                padding-right: 0;
-            }
-            &.active {
-                color: $blue;
-            }
-            
-        }
+    span {
+      padding-left: 8px;
+      letter-spacing: 1px;
     }
+    &:hover {
+      span {
+        color: $blue;
+      }
+    }
+  }
+  .right {
+    display: block;
+    float: right;
+  }
 }
 
 // sidebar
@@ -307,28 +273,6 @@ aside {
         display: block;
         font-size: 14px;
         margin-bottom: 22px;
-    }
-    .link {
-        text-decoration: none;
-        font-size: 14px;
-        display: block;
-        margin-bottom: 28px;
-        color: $blue;
-        font-weight: 600;
-    }
-    .follow {
-        background-color: $gray-light;
-        color: $dark;
-        font-weight: 600;
-        text-decoration: none;
-        width: 125px;
-        text-align: center;
-        padding: 10px 0;
-        display: block;
-        margin: 0 auto 30px;
-        &:hover {
-            text-decoration: underline;
-        }
     }
     .social {
         div {
@@ -378,6 +322,7 @@ aside {
         border-bottom: 1px solid $brdr;
         @include calc('width', '100% - 60px');
         float: left;
+
         &:last-child {
             border: none;
         }
@@ -489,3 +434,11 @@ aside {
     }
 }
 
+footer{
+  position: relative;
+width: 100%;
+background: black;
+height:350px;
+top:100%;
+
+}

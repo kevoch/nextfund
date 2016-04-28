@@ -3,19 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-th {
-	font-size: 30px;
+th{
+  font-size: 30px;
   line-height: 1.3;
   color:#36454f;
   font-weight:800;
   font-family: "Montserrat", sans-serif;
   width:400px;
+  
+
 }
 
 table {
-	border:none;
-	border-radius: 4px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
@@ -146,51 +149,51 @@ table {
   }
 }
 .campaign_bg h1{
-	padding-top: 50px;
-	color:#36454f;
-	text-align: center;
-	margin-bottom: 50px;
-	font-family: "Montserrat", sans-serif;
-	font-weight:800;
-	text-transform: uppercase;
+  padding-top: 50px;
+  color:#36454f;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:800;
+  text-transform: uppercase;
 
 }
 
 .title_input{
-	width: 700px;
-	border:none;
-	border-radius: 4px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	padding-left: 30px;
-	padding-right: 20px;
-	background-color: transparent;
-	padding-top:15px;
-	padding-bottom:15px;
+  width: 700px;
+  border:none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: transparent;
+  padding-top:15px;
+  padding-bottom:15px;
   margin-top: 0;
-	margin:auto;
+  margin:auto;
 }
 
 .title_bar{
-	background-color: white;
-	width:530px; 
-	height:50px;
-	text-align: center;
-	border:1px solid rgb(230, 230, 230);
-	font-family: "Montserrat", sans-serif;
-	font-weight:600;
-	color:darkgrey;
-	border:none;
-	border-radius: 4px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  width:530px; 
+  height:50px;
+  text-align: center;
+  border:1px solid rgb(230, 230, 230);
+  font-family: "Montserrat", sans-serif;
+  font-weight:600;
+  color:darkgrey;
+  border:none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown-menu{
-	width:530px;
-	font-family: "Montserrat", sans-serif;
-	font-weight:600;
+  width:530px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:600;
 }
 
 .glyphicon{
-	color:#36454f;
-	background-color: transparent;
+  color:#36454f;
+  background-color: transparent;
 }

@@ -227,8 +227,8 @@
   text-transform: uppercase;
    max-width: 1650px;
   min-width: 300px;
-  max-height: 1000px;
-  min-height: 500px;
+  max-height: 400px;
+  min-height: 400px;
 
 }
 .category h1 {
@@ -408,12 +408,6 @@ figure.snip-shuffle figcaption:after {
 figure.snip-shuffle:hover img{
   opacity: 1;
 }
-
-
-.modal-text{
-  font-size: 15px;
-  color: darkgray;
-}
 /*-----------------------*/
 /*SIGN IN, LOG IN BUTTONS*/
 
@@ -487,7 +481,7 @@ figure.snip-shuffle:hover img{
 }
 
 #news_feed_table th{
-  background:darkseagreen;
+  background:black;
 }
 #shuffle-img{
   width:500px;
