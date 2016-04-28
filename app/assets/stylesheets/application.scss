@@ -1,0 +1,131 @@
+@import  about_us;
+
+@import  activities;
+
+@import  callbacks;
+
+@import  campaign;
+
+@import  discovery;
+
+@import  flipclock;
+
+@import  homepage;
+
+@import  projects;
+
+@import  scaffolds;
+
+@import  search;
+
+@import  transactions;
+
+@import  users;
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+div.col-md-4 {
+    padding-top: 40px;
+}
+
+h1.description {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #999;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 5px;
+}
+
+div.container {
+    width: 85%;
+}
+
+h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.col-md-4 a {
+    color: #fff;
+}
+
+.img:hover {
+    background-color: rgba(0,0,0,0.5);
+    -webkit-filter: opacity(80%);
+/* Chrome, Safari, Opera */
+    filter: opacity(30%);
+    .linkoffunopacity: 1;
+    -webkit-transition: all .5s ease-in-out 0;
+    -moz-transition: all .5s ease-in-out 0;
+    transition: all .5s ease-in-out 0;
+    color: #fff;
+    font-size: 40px;
+    font-variant: small-caps;
+}    
+}
+
+div.img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    float: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.linkoffun {
+    opacity: 0;
+    color: #000;
+    font-size: 40px;
+}
+
+/*https://www.youtube.com/watch?v=wJF5NXygL4k*/
+.btn-pref .btn {
+    -webkit-border-radius: 0 !important;
+}
+
+img.bookings {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    right: 35%;
+}
+
+/*carousel*/
+.carousel-control.left,.carousel-control.right {
+    background-image: none;
+}
+
+ol.carousel-indicators li {
+    border: 1px solid;
+    color: #000;
+    opacity: .5;
+}
+
+.high {
+    max-height: 40px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #000;
+    height: 350px;
+    top: 100%;
+}
