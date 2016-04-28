@@ -1,0 +1,72 @@
+
+ <div class="hero" >
+    <h1 style="text-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 1px, rgba(0, 0, 0, 0.74902) 0px 1px 30px;"><span>Discover millions of campaigns to save the world</span><br>Join and Make a Difference</h1>
+
+          <video autoplay loop="loop" preload="auto" class="photo">
+            <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed.mp4" type='video/mp4'>
+            <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed.webm" type='video/webm'>
+          </video>
+
+          <div  id='ajax-btn'>
+            <svg>
+              <rect x="0" y="0" fill="none" width="300px" height="45"/>   
+            </svg>
+             Feeling Generous?
+          </div>
+
+</div>
+
+
+<div class ="project_list">
+ <div class="row" style="border:none; padding-bottom: 30px;">
+  <h1 class="description" id="1" style="color:black;border:none;letter-spacing:0.5px;font-size:36px;text-transform: uppercase;text-transform: uppercase;">All projects</h1>
+      <% @projects.each do |p| %>
+      	
+        <div class= "col-md-4" style="width: 360px; height: 550px; padding: 20px; margin-left:75px;background-color:lightseagreen"> 
+          <div class="img" style= "width:320px;background-image: url(<%= p.images.first.url %>)">
+            <%= link_to "Show Me!", project_path(p), class:"linkoffun" %></div> 
+              <h2 style="font-size: 25px;font-weight: 900;color:white; margin-top: 50px;"><%= p.campaign_title %> </h2>
+                <h4 style="font-size:14px;text-align:left;color:white;"class="project-summary"><b>Summary: </b><p><%= truncate(p.summary, :length => 150) %></p> </h4>
+                    <h4 style="color:white;font-size:14px;text-align:left"><b>Amount needed: USD </b><%= number_with_delimiter(p.amount_needed) %> </h4>
+                      <h4 style="color:white;font-size:14px;text-align:left"><b>amount pledged: USD </b><%= number_with_delimiter(p.amount_achieved) %> </h4>
+                        <div class="task-status">
+                          <div class="status-bar">
+                            <div class="status-track">
+                              <%perc =number_to_percentage((p.amount_achieved.to_f/p.amount_needed.to_f)*100, precision: 0)%>
+                              <span class="status-text"><%=perc%></span>
+                                <div class="status-fill" style="width:<%=perc%>"></div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <% end %>
+        
+ </div>
+</div>
+
+<footer>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <div class="footer_stuff">
+    <table style="border:none;margin:auto;">
+      <tr>
+        <th style="color:white; padding-top: 100px;">Campaign</th>
+        <th style="color:white; padding-top: 100px;">About Next Fund</th>
+        <th style="color:white; padding-top: 100px;">Social Media</th>
+      </tr>
+      <tr>
+        <td style="color:white;">Start a Campaign</td>
+        <td style="color:white;">How it Works</td>
+        <td style="color:white;"><i class="fa fa-facebook-square" style="font-size:48px;color:white;margin-right: 20px;"></i><i class="fa fa-twitter" style="font-size:48px;color:white;margin-right: 20px;"></i><i class="fa fa-instagram" style="font-size:48px;color:white"></i></td>
+      </tr>
+      <tr>
+        <td style="color:white;">Discover</td>
+        <td style="color:white;">About Us</td>
+      </tr>
+      <tr>
+      <td></td>
+      <td style="color:white;"> <br>Copyrights</td>
+      <td></td>
+      </tr>
+
+  </div>
+</footer>
