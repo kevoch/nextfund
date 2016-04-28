@@ -31,58 +31,58 @@ text-align: center;
 
 
 h1.description{
-	font-weight: bold;
-	letter-spacing: 2px;
-	color: #999;
-	border-bottom: 1px solid rgba(0, 0, 0,0.1);
-	padding-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #999;
+  border-bottom: 1px solid rgba(0, 0, 0,0.1);
+  padding-bottom: 5px;
 }
 
 div.container{
-	width: 85%;
+  width: 85%;
 }
 
 h2{
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: #999;
-	padding-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #999;
+  padding-bottom: 5px;
 }
 
 .col-md-4 a{
-	color:#fff;
+  color:#fff;
 }
 
 .img:hover{
-	background-color: rgba(0, 0, 0, 0.5); 
-	-webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
+  background-color: rgba(0, 0, 0, 0.5); 
+  -webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
     filter: opacity(30%);
-	.linkoffun{
-	opacity: 1;
-	-webkit-transition: all 0.5s ease-in-out 0s;
+  .linkoffun{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
     color: white;
     font-size: 40px;
     font-variant: small-caps
-	}
+  }
 }
 
 div.img{
   width:350px;
   height:200px;
   background-repeat: no-repeat;
-	background-size: cover;
-	float: center;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+  background-size: cover;
+  float: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .linkoffun{
-	opacity: 0.0;
-	color: black;
-	font-size: 40px
+  opacity: 0.0;
+  color: black;
+  font-size: 40px
 }
 
 /*summary length*/
@@ -91,9 +91,7 @@ div.img{
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
   color:white;
-  font-size:14px;
 }
 
 /*stat bar*/
@@ -153,10 +151,10 @@ div.img{
 }
 
 img.bookings {
-	width:400px;
-	height:250px;
-	position: absolute;
-	right: 35%;
+  width:400px;
+  height:250px;
+  position: absolute;
+  right: 35%;
 }
 
 /*carousel*/
@@ -165,17 +163,17 @@ img.bookings {
 }
 
 ol.carousel-indicators li{
-	border: 1px solid;
-	color: black;
-	opacity: 0.5;
+  border: 1px solid;
+  color: black;
+  opacity: 0.5;
 }
 
 
 /*show.html.erb*/
 /*tabs panel*/
 img.show-image{
-	padding-left: 65px;
-	padding-bottom: 20px;
+  padding-left: 65px;
+  padding-bottom: 20px;
 }
 
 .carousel-control.left{
@@ -187,11 +185,11 @@ img.show-image{
 }
 
 .carousel-caption{
-	margin-top: 132px;
+  margin-top: 132px;
 }
 
 .bolded{
-	font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -227,7 +225,7 @@ $method-button-color: #999;
     border-radius: 50%;
     background: $back-button-background;
     text-align: center;
-	}
+  }
         
     /*&:hover {
       cursor: pointer;
@@ -293,13 +291,3 @@ $method-button-color: #999;
     }
 }
 
-
-
-/*search_index page*/
-
-.project-summary{
-  font-size: 15px;
-}
-.project-donation{
-  font-size: 15px;
-}
