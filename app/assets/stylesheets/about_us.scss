@@ -2,10 +2,6 @@
   background-color: #F5F5F5;
 }
 
-.container {
-position: relative;
-}
-
 .bottomleft {
 position: absolute;
 bottom: -90%;
@@ -20,13 +16,22 @@ margin-top: auto;
 }
 
 .atext{
-text-shadow:1px 1px 1px rgba(71,71,71,1);font-weight:normal;color:#000000;letter-spacing:1pt;word-spacing:4pt;font-size:22px;text-align:left;font-family:verdana, sans-serif;line-height:1;margin:0px;padding:0px;
+text-shadow:1px 1px 1px rgba(71,71,71,1);
+font-weight:normal;
+color:#000000;
+letter-spacing:1pt;
+word-spacing:4pt;
+font-size:50px;
+font-family:verdana, sans-serif;
+line-height:1;
+margin:0px;
+padding:0px;
 }
 
-.container {
+/*.containerz {
   padding: 20px;
 }
-
+*/
 .profile-card {
 	background-color: #222222;
   margin-bottom: 20px;
