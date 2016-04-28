@@ -15,6 +15,19 @@
  *= require_tree .
  */
 
+ @import "about_us";
+ @import "activities";
+ @import "callbacks";
+ @import "campaign";
+ @import "discovery";
+ @import "flipclock";
+ @import "homepage";
+ @import "projects";
+ @import "scaffolds";
+ @import "search";
+ @import "transactions";
+ @import "users";
+
 div.col-md-4{
   padding-top: 40px;
 }
