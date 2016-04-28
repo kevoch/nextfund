@@ -48,7 +48,7 @@
       <li><%= link_to "Home", root_path, class:"home-navbar"%></li>
       <li><%= link_to "Discover", projects_path, class:"home-navbar"%></li>
       <li><%= link_to 'Start a campaign', new_project_path, class:"home-navbar"%></li>
-      <li><%= link_to 'About Us', root_path, class:"home-navbar"%></li> <!--to add static page route for about us-->
+      <li><%= link_to 'About Us', about_us_path, class:"home-navbar"%></li> <!--to add static page route for about us-->
 
       <% if signed_in? %>
         <li><%= link_to "My Profile", user_path(current_user), class:"home-navbar"%> </li>
